@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function Login() {
+export default function RegisterCompany() {
   return (
     <div className="login-body">
       <div className="main-wrapper">
@@ -20,7 +20,7 @@ export default function Login() {
                     </Link>
                   </div>
                   <div className="login-header">
-                    <h3>Daftar Akun Pelamar</h3>
+                    <h3>Daftar Akun Perusahaan</h3>
                   </div>
 
                   <form action="customer-dashboard.html">

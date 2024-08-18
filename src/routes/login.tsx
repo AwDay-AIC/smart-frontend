@@ -11,7 +11,7 @@ export default function Login() {
               <div className="col-md-6 col-lg-6 mx-auto">
                 <div className="login-wrap">
                   <div className="login-header">
-                    <h3>Login</h3>
+                    <h3>Masuk</h3>
                   </div>
 
                   <form action="customer-dashboard.html">
@@ -26,7 +26,7 @@ export default function Login() {
                       </div>
                       <div className="form-group">
                         <label className="col-form-label d-block">
-                          Password
+                          Kata Sandi
                         </label>
                         <div className="pass-group">
                           <input
@@ -37,23 +37,16 @@ export default function Login() {
                           <span className="toggle-password feather-eye"></span>
                         </div>
                       </div>
-                      <div className="row">
-                        <div className="col-md-6">
-                          <div className="char-length">
-                            <p>Must be 6 Characters at Least</p>
-                          </div>
-                        </div>
-                      </div>
                     </div>
                     <button
                       className="btn btn-primary w-100 login-btn"
                       type="submit"
                     >
-                      Login
+                      Masuk
                     </button>
                     <p className="no-acc">
-                      Don't have an account ?{" "}
-                      <Link to="/register">Register</Link>
+                      Belum memiliki akun ?{" "}
+                      <Link to="/register-user">Daftar</Link>
                     </p>
                   </form>
                 </div>
