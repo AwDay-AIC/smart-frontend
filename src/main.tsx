@@ -1,12 +1,17 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Login from "./routes/login";
-import RegisterUser from "./routes/register-user";
-import RegisterCompany from "./routes/register-company";
-import CompanyApplicant from "./routes/company-applicant";
+import Login from "./routes/auth/login";
+import RegisterUser from "./routes/auth/register-user";
+import RegisterCompany from "./routes/auth/register-company";
+import Jobs from "./routes/user/jobs";
+import JobDetails from "./routes/user/job-details";
 import LandingPage from "./routes/landing-page";
-import ChooseSignup from "./routes/choose-signup";
+import ChooseSignup from "./routes/auth/choose-signup";
+import Profile from "./routes/user/profile";
+
+import CompanyApplicant from "./routes/company/company-applicant";
+import CreateJob from "./routes/company/create-job";
 import "./index.css";
 
 const router = createBrowserRouter([
@@ -31,8 +36,24 @@ const router = createBrowserRouter([
     element: <RegisterCompany />,
   },
   {
-    path: "/my-company/applicant",
+    path: "/profile",
+    element: <Profile />,
+  },
+  {
+    path: "/jobs",
+    element: <Jobs />,
+  },
+  {
+    path: "/job-details",
+    element: <JobDetails />,
+  },
+  {
+    path: "/applicant",
     element: <CompanyApplicant />,
+  },
+  {
+    path: "/create-job",
+    element: <CreateJob />,
   },
 ]);
 

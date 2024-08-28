@@ -7860,6 +7860,10 @@ textarea.form-control-lg {
   padding-top: 3rem !important;
 }
 
+.pt-10 {
+  padding-top: 6rem !important;
+}
+
 .pe-0 {
   padding-right: 0 !important;
 }
